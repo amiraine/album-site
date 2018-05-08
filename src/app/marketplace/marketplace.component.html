@@ -1,5 +1,5 @@
 <h2>Marketplace</h2>
-<div class="panel panel-default" *ngFor="let album of albums">
+<div class="panel panel-default" *ngFor="let album of albums" (click)="goToDetailPage(album)">
   <div class="panel-body">
     <h3><em>{{album.title}}</em> by {{album.artist}}</h3>
   </div>
